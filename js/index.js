@@ -32,3 +32,44 @@ for (let i = 0; i < skills.length; i++) {
 };
 
 
+let messageForm = document.getElementsByName("leave_message");
+const messageSection = document.getElementById("messages");
+messageSection.hidden = true;
+
+messageForm.item(0).addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    let name = event.target.name.value;
+    let email = event.target.email.value;
+    let message = event.target.message.value;
+
+
+    console.log(name);
+    console.log(email);
+    console.log(message);
+
+    let messageList = messageSection.querySelector('ul');
+    const newMessage = document.createElement('li');
+    newMessage.innerHTML = `<a href = "mailto: ${email}">${name}</a> Message:  <span> ${message} </span>`;
+
+    const removeButton = document.createElement("button");
+    removeButton.innerText = "remove";
+    removeButton.type = "button";
+    removeButton.addEventListener('click', () => {
+        const entry = removeButton.parentElement;
+        entry.remove();
+    });
+
+    messageList.appendChild(newMessage);
+    newMessage.appendChild(removeButton);
+    messageSection.hidden = false;
+    messageForm.item(0).reset();
+
+    if(messageList== 0) {
+        document.getElementById("messages").style.display = "none";
+    }
+
+
+    
+
+});
