@@ -1,0 +1,80 @@
+body {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #194803;
+    background-color: #0ABAB5;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #025D5E;
+}
+.one {
+    list-style: square inside;
+}
+.two {
+    list-style: square inside;
+}
+.section-change {
+    margin-right: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #1D504C;
+
+}
+
+.section-change{
+    background-color: #077A6A;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.submitbutt {
+    background-color: #ffff55;
+}
+#page-wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.three {
+    list-style-type: upper-roman;
+}
+
+.site-footer {
+    background: #93c6c3;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+}
+#spaces {
+    padding-bottom: 40px;
+}
+
+#skills {
+    padding-bottom: 40px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #5ddad0;
+    }
+}
+#spaces {
+    padding-bottom: 50px;
+}
+#skills {
+    padding-bottom: 50px;
+}
