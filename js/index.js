@@ -4,7 +4,7 @@ let footer = document.querySelector("footer");
 let copyright = document.createElement("p");
 
 
-copyright.innerHTML = `Anahit Hyperatian  ${thisYear}`; 
+copyright.innerHTML = `Anahit Hyperatian &copy;  ${thisYear} `; 
 footer.appendChild(copyright);
 
 //List your technical skills by creating an Array of String values and store it in a variable named skills

@@ -4,73 +4,77 @@
 <head>
     <title>Anahit's Website</title>
     <meta name="Anahit Hayrapetian" content="HTML, CSS, JavaScript">
+    <link  rel="stylesheet" href=" css/index.css" >
 </head>
 <body>
-    <img src="Ana.JPG" alt="My Photo" width="250" height="250" />
-    <section>
-        <h2>About</h2>
-        <p>My name is Anahit, I am a CyberSecurity Professinal and Software Engineer passionate about developing efficient, effective, and innovative software.</p>
-    </section>
 
-    <section>
-        <h2>Experience</h2>
-        <p>
+    <img src="Ana.JPG" class="center" alt="My Photo" />
+    <div id="page-wrap">
+        <section id="spaces">
+            <h2>About</h2>
+            <p>My name is Anahit, I am a CyberSecurity Professinal and Software Engineer passionate about developing efficient, effective, and innovative software.</p>
+        </section>
+
+        <section id="spaces">
+            <h2>Experience</h2>
+            <p>
+                <ul class="one">
+                    <li>
+                        IT Support Specialist, Mehr Tejarat Company, 2014 – 2018
+                    </li>
+                    <li> Master of Science (MS), Cyber Security</li>
+                    <li>Bachelor of Science (BS), Computer Engineering</li>
+                    <li>Bachelor of Science (BS), Applied Mathematics</li>
+
+                </ul>
+            </p>
+
+        </section>
+
+
+        <section id="skills">
+
+            <h2>Skills</h2>
+            <ul class="two">
+            </ul>
+        </section>
+
+        <section id="spaces">
+            <h2>Connect</h2>
             <ul>
-                <li>
-                    IT Support Specialist, Mehr Tejarat Company, 2014 – 2018
-                </li>
-                <li> Master of Science (MS), Cyber Security</li>
-                <li>Bachelor of Science (BS), Computer Engineering</li>
-                <li>Bachelor of Science (BS), Applied Mathematics</li>
+
+                <li>Email:<a href="mailto:anahit.hayrapetian@gmail.com"> anahit.hayrapetian@gmail.com </a></li>
+                <li>LinkedIn:<a href="https://www.linkedin.com/in/anahit-hayrapetian/>" target="_blank"> https: //www.linkedin.com/in/anahit-hayrapetian/</a> </li>
+                <li> Github:<a href="https://github.com/Anahay" target="_blank"> https://github.com/Anahay </a></li>
 
             </ul>
-        </p>
 
-    </section>
-
-
-    <section id="skills">
-
-        <h2>Skills</h2>
-        <ul>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Connect</h2>
-        <ul>
-
-            <li>Email:<a href="mailto:anahit.hayrapetian@gmail.com"> anahit.hayrapetian@gmail.com </a></li>
-            <li>LinkedIn:<a href="https://www.linkedin.com/in/anahit-hayrapetian/>" target="_blank"> https: //www.linkedin.com/in/anahit-hayrapetian/</a> </li>
-            <li> Github:<a href="https://github.com/Anahay" target="_blank"> https://github.com/Anahay </a></li>
-
-        </ul>
-
-    </section>
-    <section>
-        <h2>Leave a Message</h2>
-        <form name="leave_message">
-            <label>Name:</label><br>
-            <input type="text" name="name" required><br>
-            <label>Email:</label><br>
-            <input type="email" name="email" required><br>
-            <label>Message:</label><br>
-            <textarea name="message" rows="4" required></textarea><br>
-            <button type="submit">Submit</button>
-           
-           
-        </form>
-</section>
-    <section id="messages">
-        <h2>Messages</h2>
-        <ul>
-
-        </ul>
-
-    </section>
+        </section>
+        <section id="spaces">
+            <h2>Leave a Message</h2>
+            <div class="section-change">
+                <form name="leave_message">
+                    <label>Name:</label><br>
+                    <input type="text" name="name" required><br>
+                    <label>Email:</label><br>
+                    <input type="email" name="email" required><br>
+                    <label>Message:</label><br>
+                    <textarea name="message" rows="4" required></textarea><br>
+                    <button type="submit" class=" submitbutt">Submit</button>
 
 
-    <footer></footer>
+                </form>
+            </div>
+        </section>
+        <section id="messages">
+            <h2>Messages</h2>
+            <ul class="three">
+            </ul>
+
+        </section>
+
+    </div>
+    <footer class="site-footer"></footer>
     <script src="js/index.js"></script>
 
 
