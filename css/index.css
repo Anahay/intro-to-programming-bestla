@@ -14,20 +14,21 @@ h2 {
     color: #025D5E;
 }
 .one {
-    list-style: square inside;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 20px;
 }
 .two {
     list-style: square inside;
 }
-.section-change {
-    margin-right: 10px;
-    font-family: sans-serif;
-    font-size: 20px;
-    color: #1D504C;
 
+
+button {
+    cursor: pointer;
+    float: inherit;
+    background-color: #ffff55;
 }
-
-.section-change{
+.section-change {
     background-color: #077A6A;
     border: none;
     color: white;
@@ -35,10 +36,30 @@ h2 {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
-.submitbutt {
-    background-color: #ffff55;
+
+input,
+textarea {
+    border: 0;
+    border-radius: 6px;
+    padding: 2%;
+    background-color: darkgray;
+    margin: 10px;
+    box-sizing: border-box;
+    flex-grow: 1;
 }
+
+.full-width {
+    width: 100%;
+}
+
+
 #page-wrap {
     width: 800px;
     margin: 0 auto;
@@ -60,21 +81,76 @@ h2 {
     height: 40px;
     bottom: 0;
 }
-#spaces {
-    padding-bottom: 40px;
-}
 
-#skills {
-    padding-bottom: 40px;
+
+#about {
+    padding-bottom: 50px;
 }
+#experience {
+    padding-bottom: 50px;
+}
+#skills {
+    padding-bottom: 50px;
+}
+#connect {
+    padding-bottom: 50px;
+}
+#message {
+    padding-bottom: 50px;
+}
+.topnav{
+
+    width:80%;
+    margin: 0 auto;
+}
+header {
+    background: #000000;
+   
+}
+header::after{
+    content:'';
+    display: table;
+    clear:both;
+}
+nav{
+    float: right;
+}
+nav ul{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-left:70px;
+    padding-top: 25px;
+    position: relative;
+}
+nav a {
+    color:#077A6A;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+    nav a {
+        color: white;
+    }
+    nav a::before{
+        content:'';
+        display: block;
+        height:5px;
+        background-color:aquamarine;
+        position: absolute;
+        top:0;
+        width:0%;
+
+    }
+    nav a:hover::before{
+        width:100%;
+    }
+
+
 @media only screen and (max-width: 600px) {
     body {
         background-color: #5ddad0;
     }
-}
-#spaces {
-    padding-bottom: 50px;
-}
-#skills {
-    padding-bottom: 50px;
 }
