@@ -9,7 +9,7 @@ footer.appendChild(copyright);
 
 //List your technical skills by creating an Array of String values and store it in a variable named skills
 let skills = ["JavaScript", "CSS", "HTML", "Microsoft Suite"];
-
+let projects = ["JavaScript Intro"];
 
 //Using "DOM Selection", select the #skills section by id and store it in a variable named skillsSection
 
@@ -69,7 +69,21 @@ messageForm.item(0).addEventListener("submit", (event) => {
         document.getElementById("messages").style.display = "none";
     }
 
-
-    
-
 });
+
+let githubRequest = new XMLHttpRequest();
+githubRequest.open("GET", "https://api.github.com/users/Anahay/repos");
+
+githubRequest.addEventListener('load', (event) => {
+    let repositories = JSON.parse(this.response);
+    console.log(repositories);
+});
+let projectSection = document.getElementById("projects");
+let projectList = projectSection.querySelector("ul");
+for (let i = 0; i < projects.length; i++) {
+    let project = document.createElement("li");
+    project.innerText = projects[i];
+    projectList.appendChild(project);
+    };
+
+githubRequest.send();

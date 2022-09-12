@@ -4,23 +4,40 @@
 <head>
     <title>Anahit's Website</title>
     <meta name="Anahit Hayrapetian" content="HTML, CSS, JavaScript">
-    <link  rel="stylesheet" href=" css/index.css" >
+    <link rel="stylesheet" href=" css/index.css">
+   
 </head>
 <body>
+    
+    <header>
+        <div class="topnav">
+            <nav>
+                <ul>
+                    <li> <a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li> <a href="#connect">Connect</a> </li>
+                </ul>
+            </nav>
+              
+            
+        </div>
+
+    </header>
 
     <img src="Ana.JPG" class="center" alt="My Photo" />
     <div id="page-wrap">
-        <section id="spaces">
+        <section id="about">
             <h2>About</h2>
             <p>My name is Anahit, I am a CyberSecurity Professinal and Software Engineer passionate about developing efficient, effective, and innovative software.</p>
         </section>
 
-        <section id="spaces">
+        <section id="experience">
             <h2>Experience</h2>
             <p>
                 <ul class="one">
                     <li>
-                        IT Support Specialist, Mehr Tejarat Company, 2014 – 2018
+                        IT Support Specialist,  2014 – 2018
                     </li>
                     <li> Master of Science (MS), Cyber Security</li>
                     <li>Bachelor of Science (BS), Computer Engineering</li>
@@ -39,39 +56,50 @@
             </ul>
         </section>
 
-        <section id="spaces">
-            <h2>Connect</h2>
+
+        <section id= "projects">
+            <h2>Projects</h2>
             <ul>
 
-                <li>Email:<a href="mailto:anahit.hayrapetian@gmail.com"> anahit.hayrapetian@gmail.com </a></li>
-                <li>LinkedIn:<a href="https://www.linkedin.com/in/anahit-hayrapetian/>" target="_blank"> https: //www.linkedin.com/in/anahit-hayrapetian/</a> </li>
-                <li> Github:<a href="https://github.com/Anahay" target="_blank"> https://github.com/Anahay </a></li>
-
             </ul>
-
+           
         </section>
-        <section id="spaces">
-            <h2>Leave a Message</h2>
-            <div class="section-change">
-                <form name="leave_message">
-                    <label>Name:</label><br>
-                    <input type="text" name="name" required><br>
-                    <label>Email:</label><br>
-                    <input type="email" name="email" required><br>
-                    <label>Message:</label><br>
-                    <textarea name="message" rows="4" required></textarea><br>
-                    <button type="submit" class=" submitbutt">Submit</button>
 
 
-                </form>
-            </div>
-        </section>
-        <section id="messages">
-            <h2>Messages</h2>
-            <ul class="three">
-            </ul>
+            <section id="connect">
+                <h2>Connect</h2>
+                <ul>
 
-        </section>
+                    <li>Email:<a href="mailto:anahit.hayrapetian@gmail.com"> anahit.hayrapetian@gmail.com </a></li>
+                    <li>LinkedIn:<a href="https://www.linkedin.com/in/anahit-hayrapetian/>" target="_blank"> https: //www.linkedin.com/in/anahit-hayrapetian/</a> </li>
+                    <li> Github:<a href="https://github.com/Anahay" target="_blank"> https://github.com/Anahay </a></li>
+
+                </ul>
+
+            </section>
+
+            <section id="message">
+                <h2>Leave a Message</h2>
+                <div class="section-change">
+                    <form name="leave_message">
+                        <label>Name:</label><br>
+                        <input type="text" name="name" required><br>
+                        <label>Email:</label><br>
+                        <input type="email" name="email" required><br>
+                        <label>Message:</label><br>
+                        <textarea name="message" cols="55" rows="10" class="full-width" required></textarea><br>
+                        <button type="submit" class=" submitbutt">Submit</button>
+
+                    </form>
+                </div>
+            </section>
+
+            <section id="messages">
+                <h2>Messages</h2>
+                <ul class="three">
+                </ul>
+
+            </section>
 
     </div>
     <footer class="site-footer"></footer>
