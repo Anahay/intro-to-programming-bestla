@@ -71,13 +71,15 @@ messageForm.item(0).addEventListener("submit", (event) => {
 
 });
 
-let githubRequest = new XMLHttpRequest();
+/*let githubRequest = new XMLHttpRequest();
 githubRequest.open("GET", "https://api.github.com/users/Anahay/repos");
 
 githubRequest.addEventListener('load', (event) => {
     let repositories = JSON.parse(this.response);
     console.log(repositories);
 });
+
+
 let projectSection = document.getElementById("projects");
 let projectList = projectSection.querySelector("ul");
 for (let i = 0; i < projects.length; i++) {
@@ -85,5 +87,17 @@ for (let i = 0; i < projects.length; i++) {
     project.innerText = projects[i];
     projectList.appendChild(project);
     };
+*/
 
+fetch('https://api.github.com/users/Anahay/repos')
+    .then(response => response.json())
+    .then((data) => {
+        let projectSection = document.getElementById("projects");
+        let projectList = projectSection.querySelector("ul");
+        for (let i = 0; i < projects.length; i++) {
+            let project = document.createElement("li");
+            project.innerText = projects[i];
+            projectList.appendChild(project);
+        }
+    });
 githubRequest.send();
